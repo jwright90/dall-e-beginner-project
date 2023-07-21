@@ -37,6 +37,5 @@ app.post('/generate', async(req, res) => {
     }
 });
 
-app.listen(8080, () => console.log(`[server]: Server is running at http://localhost:${port}`));
+app.listen(port, () => console.log(`[server]: Server is running at http://localhost:${port}`));
 
-module.exports = app;
