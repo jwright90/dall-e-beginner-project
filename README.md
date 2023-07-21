@@ -1,0 +1,1 @@
+Beginner project from fireship.io tutorial using DALL-E AI image generator
