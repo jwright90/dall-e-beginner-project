@@ -12,6 +12,8 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
+const port = process.env.PORT || 8080;
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -35,6 +37,6 @@ app.post('/dream', async(req, res) => {
     }
 });
 
-app.listen(8080, () => console.log('make art on http://localhost:8080/dream'));
+app.listen(8080, () => console.log(`[server]: Server is running at http://localhost:${port}`));
 
-
+module.exports = app;
