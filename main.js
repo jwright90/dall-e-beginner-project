@@ -8,7 +8,7 @@ form.addEventListener('submit', async (e) => {
 
     const data = new FormData(form);
 
-    const response = await fetch('/api/server', {
+    const response = await fetch('/api', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
